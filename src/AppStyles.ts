@@ -31,6 +31,7 @@ export const Header = styled.h2`
 export const Categories = styled.h3`
     font-size: 18px;
     font-weight: normal;
+    margin-bottom: 1.5rem;
 `
 
 export const Overlay = styled.div<{onClick: () => void}>`

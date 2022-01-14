@@ -2,18 +2,18 @@ import styled from "styled-components";
 
 export const Container = styled.li`
     display: flex;
-    width: 14rem;
+    width: 17rem;
     background: #fff;
     border-radius: 4px;
     flex-direction: column;
     margin: .5rem;
     overflow: hidden;
-    box-shadow: 0 3px 4px 0 #ddd
+    box-shadow: 0 0 15px 3px #ddd
 `
 
 export const Thumbnail = styled.div<{img: string}>`
     position: relative;    
-    width: 130%;
+    width: 140%;
     height: 12rem;
     background-image: url("${props => props.img}");
     background-position: center;
@@ -27,6 +27,7 @@ export const PhotoCount = styled.div`
     position: absolute;
     top: 1rem;
     left: 1rem;
+    font-size: .7rem;
     padding: 0.4rem 1rem;
     border-radius: 2rem;
     color: #fff;

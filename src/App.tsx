@@ -44,7 +44,7 @@ function App() {
     <div className="App" style={{ position: 'relative'}}>
       <Container>
         <Header className='relative'>Fotogaléria</Header>
-        <Categories className='relative'>{ header != '' ?  <Link to="/gallery" style={{ textDecoration: 'none', color:'#000'}} onClick={handleGoBack}>
+        <Categories className='relative'>{ header != '' ?  <Link to="/" style={{ textDecoration: 'none', color:'#000'}} onClick={handleGoBack}>
           
          <BackArrow src={Back} /> { header }</Link>  : 'Kategórie' }</Categories>
 
@@ -55,7 +55,7 @@ function App() {
             }}>
               
           <Switch>
-            <Route path="/gallery" exact render={() => <GalleryList images={imgs} selectGallery={(selector: string, title: string) => handleSelectGallery(selector, title)} />} />
+            <Route path="/" exact render={() => <GalleryList images={imgs} selectGallery={(selector: string, title: string) => handleSelectGallery(selector, title)} />} />
             <Route path="/gallery/:slug" exact render={() => <Gallery setHeader={(slug: string) => handleSetHeader(slug)}  />} />
           </Switch>
         </GalleryContext.Provider>

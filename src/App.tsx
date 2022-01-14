@@ -7,6 +7,7 @@ import { api } from './api'
 import { useEffect, useState } from 'react';
 import { GalleryContext } from './context/galleryContext'
 import Back from './img/icons/left.png'
+import axios from 'axios';
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
   useEffect(() => {
     setImgs(api.headers)
   }, [])
-
+  
 
   const handleSelectGallery = (sel: string, title: string) => {
     setSelecteGallery(api.galleries[sel])

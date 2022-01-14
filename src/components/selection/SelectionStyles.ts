@@ -52,6 +52,11 @@ export const SVG = styled.svg`
 
 `
 
+export const Form = styled.form`
+    display: flex;
+    flex-direction: column
+`
+
 export const Input = styled.input<{ autoFocus: boolean}>`
     border: 1px solid #ddd;
     padding: 1rem;

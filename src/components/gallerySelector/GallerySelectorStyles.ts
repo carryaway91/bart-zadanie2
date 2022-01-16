@@ -11,7 +11,7 @@ export const Container = styled.li`
     box-shadow: 0 0 15px 3px #ddd
 `
 
-export const Thumbnail = styled.div<{img?: string}>`
+export const Thumbnail = styled.div<{img: string}>`
     position: relative;    
     width: 140%;
     height: 12rem;
@@ -23,14 +23,16 @@ export const Thumbnail = styled.div<{img?: string}>`
     border-radius-top-right: 4px;
 `
 
-
-export const NoImg = styled.img`
-    width: 142px;
-    position: relative;
-    left: 4rem;
-    top: 3rem;
+export const PhotoCount = styled.div`
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: .7rem;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
 `
-
 
 export const Description = styled.div`
     display: flex;

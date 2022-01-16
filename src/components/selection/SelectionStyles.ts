@@ -52,12 +52,12 @@ export const SVG = styled.svg`
 
 `
 
-export const Form = styled.form`
+export const Form = styled.form<{onSubmit: (e: React.FormEvent<HTMLFormElement>) => void }>`
     display: flex;
     flex-direction: column
 `
 
-export const Input = styled.input<{ autoFocus: boolean}>`
+export const Input = styled.input<{ autoFocus?: boolean}>`
     border: 1px solid #ddd;
     padding: 1rem;
     margin-bottom: 1.5rem;
@@ -73,4 +73,7 @@ export const InputName = styled.span`
     left: .6rem;
     align-self: self-start;
 `
-
+export const ErrorMsg = styled.p`
+    color: red;
+    margin-top: 0
+`
